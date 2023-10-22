@@ -70,6 +70,10 @@ ifeq ($(CONFIG_LIBER_DTB), y)
 LINUXINCLUDE    += \
                 -include $(srctree)/techpack/audio/config/liberautoconf.h
 endif
+ifeq ($(CONFIG_HANOIP_DTB), y)
+LINUXINCLUDE    += \
+                -include $(srctree)/techpack/audio/config/hanoiautoconf.h
+endif
 ifeq ($(CONFIG_ODESSA_DTB), y)
 LINUXINCLUDE    += \
                 -include $(srctree)/techpack/audio/config/odessaautoconf.h
